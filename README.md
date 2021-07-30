@@ -1,14 +1,18 @@
 # MovieLens
 
 ## Introduction
-User와 Item을 보고 rating을 예상하는 프로그램
+영화 평점 데이터를 보고 rating을 예상하는 모델들을 실험함. \
+Rating은 0.5점 단위로 구성되어있으며 0.5점부터 5점까지의 값이 존재함.
 
-## Experiment
-U를 user, M을 movie, G를 genres로 두고 각각 embedding 한 후 User Embedding Size = 64로 실험함.
-
-## Result
-Matrix Factorization 알고리즘은 RMSE가 0.8이 훨씬 넘었음.
+## Experiment Result
+U를 user, M을 movie, G를 genres로 두고 각각 embedding 한 후 User Embedding Size = 64로 실험함. \
+최종 rating 값 예측에서는 (sigmoid output) * 5.5로 실험한 것이 (sigmoid output)*4.5 + 0.5보다 좋은 성능을 보였음. \
+Matrix Factorization 알고리즘만 이용했을 때는 RMSE가 0.8이 훨씬 넘었음. \
 MLP Layer와 Matrix Factorization를 섞은 NeuMF 구조를 이용하니 MovieLens 10M에서는 RMSE : 0.7877, MovieLens20M에서는 RMSE : 0.7841 결과가 나옴
+
+## Conclusion
+Matrix Factorization에 MLP Layer을 섞은 Neural Network 구조가 가장 좋은 성능을 보이는 것을 확인함. \
+"On the Difficulty of Evaluating Baselines: A Study on Recommender Systems" 논문을 보면 Matrix Factorization만으로 RMSE가 0.772가 나오는데 어떻게 이게 가능한 것인지 더 연구해봐야될 필요가 있음.
 
 ## Benchmark
 https://paperswithcode.com/sota/collaborative-filtering-on-movielens-10m?metric=RMSE
