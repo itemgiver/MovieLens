@@ -1,5 +1,7 @@
 # MovieLens
 
+![image](https://user-images.githubusercontent.com/87184009/127741772-e7dce7af-1d76-4720-a320-6a87f695c1c8.png)
+
 ## Introduction
 영화 평점 데이터를 보고 rating을 예상하는 모델들을 실험함. \
 Rating은 0.5점 단위로 구성되어있으며 0.5점부터 5점까지의 값이 존재함.
