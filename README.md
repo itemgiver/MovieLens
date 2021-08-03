@@ -23,7 +23,7 @@ MovieLens 10M에서는 RMSE : 0.7877, MovieLens20M에서는 RMSE : 0.7841 결과
 Matrix Factorization에 MLP Layer을 섞은 Neural Network 구조가 가장 좋은 성능을 보이는 것을 확인함. \
 "On the Difficulty of Evaluating Baselines: A Study on Recommender Systems" 논문을 보면 \
 Matrix Factorization만으로 RMSE가 0.772가 나오는데 어떻게 이게 가능한 것인지 더 연구해봐야될 필요가 있음. \
-추가적으로 HR@10, NDCG@10 모델을 새로 구현하고 실험해볼 필요가 있음.
+추가적으로 HR@10, NDCG@10 모델을 새로 구현하고 실험해볼 필요가 있음. \
 다만 HR@10, NDCG@10은 explicit feedback을 implicit feedback을 바꾸는 검증되지 않은 방법이 이용되기 때문에 조금 더 생각해봐야될 필요가 있음.
 
 ## Benchmark
