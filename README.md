@@ -15,7 +15,7 @@ Embedding의 비율을 M이 75%, G를 25%로 해서 concatenate한 movie latent 
 
 Matrix Factorization 알고리즘만 이용했을 때는 RMSE가 0.8이 훨씬 넘었음. \
 MLP Layer와 Matrix Factorization를 섞은 NeuMF 구조를 이용하니 \
-MovieLens 10M에서는 RMSE : 0.7877, MovieLens20M에서는 RMSE : 0.7841 결과가 나옴
+MovieLens 10M에서는 RMSE : 0.7866, MovieLens20M에서는 RMSE : 0.7841 결과가 나옴
 
 ## Conclusion
 Matrix Factorization에 MLP Layer을 섞은 Neural Network 구조가 가장 좋은 성능을 보이는 것을 확인함. \
