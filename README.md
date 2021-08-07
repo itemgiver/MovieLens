@@ -19,11 +19,11 @@ MovieLens 10M에서 좋은성능을보인 MRMA model과 Sparse FC model을 응�
 MRMA = Mixture-Rank Matrix Approximation \
 Sparse FC = Kernelized Synaptic Weight Matrices
 
-직접 구현한 모델의 성능이 MovieLens 10M에서는 RMSE : 0.7780를 얻으며 \
+## Conclusion
+직접 구현한 모델의 성능이 MovieLens 10M에서는 RMSE : 0.7771를 얻으며 \
 RMSE 0.77x 대의 다른 논문들과 비슷한 수준의 모델을 구현함.
 
-## Conclusion
-Matrix Factorization에 MLP Layer을 섞은 Neural Network 구조가 가장 좋은 성능을 보이는 것을 확인함. \
+## Further Research
 "On the Difficulty of Evaluating Baselines: A Study on Recommender Systems" 논문을 보면 \
 Matrix Factorization만으로 RMSE가 0.772가 나오는데 어떻게 이게 가능한 것인지 더 연구해봐야될 필요가 있음. \
 추가적으로 HR@10, NDCG@10 모델을 새로 구현하고 실험해볼 필요가 있음. \
