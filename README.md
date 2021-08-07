@@ -9,15 +9,18 @@ Movie Rating은 0.5점 단위로 구성되어있으며 0.5점부터 5점까지�
 MovieLens 데이터는 추천시스템 연구에 자주 사용되는 데이터로 HR@10, NDCG@10, RMSE 등의 평가지표가 있음.
 
 ## Experiment Result
-U를 user, M을 movie, G를 genres로 두고 각각 embedding 한 후 User Embedding Size = 64로 실험함. \
-최종 rating 값 예측에서는 (sigmoid output) * 5.5로 실험한 것이 (sigmoid output)*4.5 + 0.5보다 좋은 성능을 보였음. \
-Embedding의 비율을 M이 75%, G를 25%로 해서 concatenate한 movie latent vector의 성능이 가장 좋았음. \
+최종 rating 값 예측에서는 (sigmoid output) * 5.5로 실험한 것이 가장 좋은 성능을 보임 \
+L2 regularization이 효과가 있는 것을 확인함 \
 Batch Normalization, Dropout 방식은 오히려 성능을 저하시키는 것을 확인함. \
-Adam optimizer의 성능이 신기술인 RAdam보다 좋은 것을 확인함.
+Adam optimizer의 성능이 RAdam optimizer보다 좋은 것을 확인함 \
+Matrix Factorization, MLP layer을 섞은 wide-and-deep 모델이 성능이 좋은 것을 확인함
 
-Matrix Factorization 알고리즘만 이용했을 때는 RMSE가 0.8이 훨씬 넘었음. \
-MLP Layer와 Matrix Factorization를 섞은 NeuMF 구조를 이용하니 \
-MovieLens 10M에서는 RMSE : 0.7780, MovieLens20M에서는 RMSE : 0.7841 결과가 나옴
+MovieLens 10M에서 좋은성능을보인 MRMA model과 Sparse FC model을 응용하여 모델을 재구성함 \
+MRMA = Mixture-Rank Matrix Approximation \
+Sparse FC = Kernelized Synaptic Weight Matrices
+
+직접 구현한 모델의 성능이 MovieLens 10M에서는 RMSE : 0.7780를 얻으며 \
+RMSE 0.77x 대의 다른 논문들과 비슷한 수준의 모델을 구현함.
 
 ## Conclusion
 Matrix Factorization에 MLP Layer을 섞은 Neural Network 구조가 가장 좋은 성능을 보이는 것을 확인함. \
