@@ -20,7 +20,7 @@ MRMA = Mixture-Rank Matrix Approximation \
 Sparse FC = Kernelized Synaptic Weight Matrices
 
 ## Conclusion
-직접 구현한 모델의 성능이 MovieLens 10M에서는 RMSE : 0.7771를 얻으며 \
+직접 구현한 모델의 성능이 MovieLens 10M에서는 RMSE : 0.7748를 얻으며 \
 RMSE 0.77x 대의 다른 논문들과 비슷한 수준의 모델을 구현함.
 
 ## Further Research
