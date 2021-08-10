@@ -15,7 +15,7 @@ Batch Normalization, Dropout 방식은 오히려 성능을 저하시키는 것�
 Adam optimizer의 성능이 RAdam optimizer보다 좋은 것을 확인함 \
 Matrix Factorization, MLP layer을 섞은 wide-and-deep 모델이 성능이 좋은 것을 확인함
 
-MovieLens 10M에서 좋은성능을보인 MRMA model과 Sparse FC model을 응용하여 모델을 재구성함 \
+MovieLens 10M에서 좋은성능을보인 MRMA model을 응용하여 모델을 재구성함 \
 MRMA = Mixture-Rank Matrix Approximation \
 Sparse FC = Kernelized Synaptic Weight Matrices
 
