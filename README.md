@@ -15,13 +15,9 @@ Batch Normalization, Dropout 방식은 오히려 성능을 저하시키는 것�
 Adam optimizer의 성능이 RAdam optimizer보다 좋은 것을 확인함 \
 Matrix Factorization, MLP layer을 섞은 wide-and-deep 모델이 성능이 좋은 것을 확인함
 
-MovieLens 10M에서 좋은성능을보인 MRMA model을 응용하여 모델을 재구성함 \
-MRMA = Mixture-Rank Matrix Approximation \
-Sparse FC = Kernelized Synaptic Weight Matrices
-
 ## Conclusion
-직접 구현한 모델의 성능이 MovieLens 10M에서는 RMSE : 0.7714를 얻으며 \
-RMSE 0.77x 대의 다른 논문들과 비슷한 수준의 모델을 구현함.
+직접 구현한 모델의 성능이 MovieLens 10M에서는 RMSE : 0.7709를 얻으며 \
+다른 모든 RMSE 0.77x 대의 논문들보다 좋은 성능을 보이는 것을 확인함.
 
 ## Further Research
 "On the Difficulty of Evaluating Baselines: A Study on Recommender Systems" 논문을 보면 \
