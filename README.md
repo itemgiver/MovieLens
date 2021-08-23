@@ -16,7 +16,7 @@ Adam optimizer의 성능이 RAdam optimizer보다 좋은 것을 확인함 \
 Matrix Factorization, MLP layer을 섞은 wide-and-deep 모델이 성능이 좋은 것을 확인함
 
 ## Conclusion
-직접 구현한 모델의 성능이 MovieLens 10M에서는 RMSE : 0.7709를 얻으며 \
+직접 구현한 모델의 성능이 MovieLens 10M에서는 RMSE : 0.7688를 얻으며 \
 다른 모든 RMSE 0.77x 대의 논문들보다 좋은 성능을 보이는 것을 확인함.
 
 ## Further Research
