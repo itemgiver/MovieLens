@@ -8,6 +8,11 @@
 Movie Rating은 0.5점 단위로 구성되어있으며 0.5점부터 5점까지의 값이 존재함. \
 MovieLens 데이터는 추천시스템 연구에 자주 사용되는 데이터로 HR@10, NDCG@10, RMSE 등의 평가지표가 있음.
 
+## Recommender-System-Study
+
+논문들과 DEVIEW, Search Colloquium 영상들을 보며 Recommender System을 공부함. \
+Graph Convolutional Neural Networks in Recommender Systems에 흥미를 가지게 됨.
+
 ## Experiment Result
 최종 rating 값 예측에서는 (sigmoid output) * 5.5로 실험한 것이 가장 좋은 성능을 보임 \
 L2 regularization이 효과가 있는 것을 확인함 \
@@ -16,7 +21,7 @@ Adam optimizer의 성능이 RAdam optimizer보다 좋은 것을 확인함 \
 Matrix Factorization, MLP layer을 섞은 wide-and-deep 모델이 성능이 좋은 것을 확인함
 
 ## Conclusion
-직접 구현한 모델의 성능이 MovieLens 10M에서는 RMSE : 0.7677를 얻으며 \
+구현한 모델의 성능이 MovieLens 10M에서는 RMSE : 0.7677를 얻으며 \
 다른 모든 RMSE 0.77x 대의 논문들보다 좋은 성능을 보이는 것을 확인함.
 
 ## Further Research

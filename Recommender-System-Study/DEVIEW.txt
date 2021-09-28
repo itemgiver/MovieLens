@@ -1,0 +1,26 @@
+DEVIEW 2017 - 인공지능 추천 시스템 AiRS 개발기: 모델링과 시스템
+https://tv.naver.com/v/2297146
+
+DEVIEW 2018 - NAVER 광고 deep click prediction: 모델링부터 서빙까지
+https://tv.naver.com/v/4584668
+
+DEVIEW 2019 - 쿠팡 추천 시스템 2년간의 변천사 (상품추천에서 실시간 개인화로)
+https://tv.naver.com/v/11212875
+
+DEVIEW 2020 - 뭐볼까? : 네이버 AiRS 인공지능 콘텐츠 추천의 진화
+https://tv.naver.com/v/16968202
+
+DEVIEW 2020 - 당신 취향의 맛집을 추천해드립니다 : 장소 개인화 추천 시스템의 비밀 (Collaborative Filtering Meets the Item Embedding)
+https://tv.naver.com/v/16968206
+
+Search Colloquium 2021 - Optimizing Training Data in Learning to Rank
+https://tv.naver.com/v/20311165
+
+Search Colloquium 2021 - Understanding POI: from Context to Embedding
+https://tv.naver.com/v/20312470
+
+Search Colloquium 2021 - Item2Item: Wider and Deeper Product Recommendation
+https://tv.naver.com/v/20311903
+
+Search Colloquium 2021 - NAVER Knowledge Graph Introduction
+https://tv.naver.com/v/20312816
