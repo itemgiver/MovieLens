@@ -6,8 +6,7 @@
 
 MovieLens data can be used in recommendation system research. It has millions of real-world ratings. \
 Movie ratings are made on a 5-star scale, with half-star increments (0.5 stars - 5.0 stars). \
-In this project, we will find out good preprocessing steps and models using evaluation metrics such as HR@10, NDCG@10, and RMSE. \
-Until now, research has been progressed only on RMSE metric.
+In this project, we will find out good preprocessing steps and models using evaluation metrics such as HR@10, NDCG@10, and RMSE. Until now, research has been progressed only on RMSE metric.
 
 ## Related Work
 
