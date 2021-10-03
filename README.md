@@ -26,7 +26,7 @@ The train and test datasets are separated at a ratio of 9:1.
 
 ## Recommender System Model
 
-1. Moving ratings are made on 5-star scale (0.5 stars - 5.0 stars). We can think that prediction can be (sigmoid output) * 4.5 + 0.5 because it will range between 0.5 and 5. However, using (sigmoid output) * 5.5 gives me much better accuracy in the movie rating prediction. It is better to have a small extra prediction range.
+1. Movie ratings are made on a 5-star scale (0.5 stars - 5.0 stars). We can think that prediction can be (sigmoid output) * 4.5 + 0.5 because it will range between 0.5 and 5. However, using (sigmoid output) * 5.5 gives me much better accuracy in the movie rating prediction. It is better to have a small extra prediction range.
 2. L2 regularization helps prevent overfitting. Experimentally, the L2 regularization cost has to be between 2% to 4% of the total cost.
 3. The Wide & Deep model that uses both Matrix Factorization and MLP layers showed good performance.
 4. Mixture-Rank Matrix Approximation(MRMA) has various embedding sizes and combines each matrix factorization model. The larger model has the higher performance, but there is also a trade-off that increases total time complexity.
