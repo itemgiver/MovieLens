@@ -6,7 +6,8 @@
 
 MovieLens data can be used in recommendation system research. It has millions of real-world ratings. \
 Movie ratings are made on a 5-star scale, with half-star increments (0.5 stars - 5.0 stars). \
-In this project, we will find out good preprocessing steps and models using evaluation metrics such as HR@10, NDCG@10, and RMSE.
+In this project, we will find out good preprocessing steps and models using evaluation metrics such as HR@10, NDCG@10, and RMSE. \
+Until now, research has been progressed only on RMSE metric.
 
 ## Related Work
 
@@ -16,14 +17,24 @@ You can learn basic concepts of the recommendation system using "Recommender-Sys
 
 ## Preprocessing
 
+Added a "timestamp" value of when does the user watched the movie since the movie was released. \
+Genre forms such as "Romance, Adventure" was changed to numerical values. \
+The "timestamp" value was grouped at intervals by two weeks and defined as "day" value.
+
 ![image](https://user-images.githubusercontent.com/87184009/135739589-75deb6de-054a-4060-9f47-5b2537b5631c.png)
 
 ## Recommender System Model
-최종 rating 값 예측에서는 (sigmoid output) * 5.5로 실험한 것이 가장 좋은 성능을 보임 \
-L2 regularization이 효과가 있는 것을 확인함 \
-Batch Normalization, Dropout 방식은 오히려 성능을 저하시키는 것을 확인함. \
-Adam optimizer의 성능이 RAdam optimizer보다 좋은 것을 확인함 \
-Matrix Factorization, MLP layer을 섞은 wide-and-deep 모델이 성능이 좋은 것을 확인함
+
+1. Moving ratings are made on 5-star scale (0.5 stars - 5.0 stars). We can think that prediction can be (sigmoid output) * 4.5 + 0.5 because it will range between 0.5 and 5. However, using (sigmoid output) * 5.5 gives me much better accuracy in the movie rating prediction. It is better to have a small extra prediction range.
+2. L2 regularization helps prevent overfitting. Experimentally, the L2 regularization cost has to be between 2% to 4% of the total cost.
+3. The Wide & Deep model that uses both Matrix Factorization and MLP layers showed good performance.
+4. Mixture-Rank Matrix Approximation(MRMA) has various embedding sizes and combines each matrix factorization model. The larger model has the higher performance, but there is also a trade-off that increases total time complexity.
+5. Batch Normalization and Dropout techniques showed poor results in both train and test datasets.
+6. Adam optimizer performs better than any other optimization algorithm.
+7. It is better to put metadata of items such as genres in the MLP input layer without putting them in matrix factorization.
+
+To see more details about my model refer to \
+https://github.com/itemgiver/MovieLens/blob/main/src/MovieLens10M_RMSE_7677.ipynb
 
 ## Result
 
@@ -32,19 +43,10 @@ Test RMSE = 0.7677
 Difference between the actual value and the predicted value Histogram\
 ![image](https://user-images.githubusercontent.com/87184009/135738882-dd9aa3f7-549a-4858-bd20-ba4c83c17d36.png)
 
-## Conclusion
-구현한 모델의 성능이 MovieLens 10M에서는 RMSE : 0.7677를 얻으며 \
-다른 모든 RMSE 0.77x 대의 논문들보다 좋은 성능을 보이는 것을 확인함.
-
-## Further Research
-"On the Difficulty of Evaluating Baselines: A Study on Recommender Systems" 논문을 보면 \
-Matrix Factorization만으로 RMSE가 0.772가 나오는데 어떻게 이게 가능한 것인지 더 연구해봐야될 필요가 있음. \
-추가적으로 HR@10, NDCG@10 모델을 새로 구현하고 실험해볼 필요가 있음. \
-다만 HR@10, NDCG@10은 explicit feedback을 implicit feedback을 바꾸는 검증되지 않은 방법이 이용되기 때문에 조금 더 생각해봐야될 필요가 있음.
-
 ## Benchmark
-https://paperswithcode.com/sota/collaborative-filtering-on-movielens-10m?metric=RMSE \
-https://paperswithcode.com/sota/collaborative-filtering-on-movielens-20m?metric=RMSE
+
+The results of other papers on the RMSE value can be seen here. \
+https://paperswithcode.com/sota/collaborative-filtering-on-movielens-10m?metric=RMSE
 
 ## References
 https://grouplens.org/datasets/movielens/
