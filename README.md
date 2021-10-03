@@ -19,7 +19,8 @@ You can learn basic concepts of the recommendation system using "Recommender-Sys
 
 Added a "timestamp" value of when does the user watched the movie since the movie was released. \
 Genre forms such as "Romance, Adventure" was changed to numerical values. \
-The "timestamp" value was grouped at intervals by two weeks and defined as "day" value.
+The "timestamp" value was grouped at intervals by two weeks and defined as "day" value. \
+The train and test datasets are separated at a ratio of 9:1.
 
 ![image](https://user-images.githubusercontent.com/87184009/135739589-75deb6de-054a-4060-9f47-5b2537b5631c.png)
 
