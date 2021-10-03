@@ -3,10 +3,10 @@
 ![image](https://user-images.githubusercontent.com/87184009/127741772-e7dce7af-1d76-4720-a320-6a87f695c1c8.png)
 
 ## Introduction
-영화 평점 데이터를 보고 rating을 예상하는 모델들을 실험하고 RMSE 값을 줄이는 방법을 고민한 연구.
 
-Movie Rating은 0.5점 단위로 구성되어있으며 0.5점부터 5점까지의 값이 존재함. \
-MovieLens 데이터는 추천시스템 연구에 자주 사용되는 데이터로 HR@10, NDCG@10, RMSE 등의 평가지표가 있음.
+MovieLens data can be used in recommendation system research. It has millions of real-world ratings. \
+Movie ratings are made on a 5-star scale, with half-star increments (0.5 stars - 5.0 stars). \
+In this project, we will find out good preprocessing steps and models using evaluation metrics such as HR@10, NDCG@10, and RMSE.
 
 ## Recommender-System-Study
 
@@ -19,6 +19,17 @@ L2 regularization이 효과가 있는 것을 확인함 \
 Batch Normalization, Dropout 방식은 오히려 성능을 저하시키는 것을 확인함. \
 Adam optimizer의 성능이 RAdam optimizer보다 좋은 것을 확인함 \
 Matrix Factorization, MLP layer을 섞은 wide-and-deep 모델이 성능이 좋은 것을 확인함
+
+## Training
+
+
+
+## Result
+
+Test RMSE = 0.7677
+
+Difference between the actual value and the predicted value Histogram\
+![image](https://user-images.githubusercontent.com/87184009/135738882-dd9aa3f7-549a-4858-bd20-ba4c83c17d36.png)
 
 ## Conclusion
 구현한 모델의 성능이 MovieLens 10M에서는 RMSE : 0.7677를 얻으며 \
@@ -35,5 +46,4 @@ https://paperswithcode.com/sota/collaborative-filtering-on-movielens-10m?metric=
 https://paperswithcode.com/sota/collaborative-filtering-on-movielens-20m?metric=RMSE
 
 ## References
-https://www.kaggle.com/smritisingh1997/movielens-10m-dataset \
-https://www.kaggle.com/grouplens/movielens-20m-dataset
+https://grouplens.org/datasets/movielens/
