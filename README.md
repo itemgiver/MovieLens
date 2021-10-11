@@ -39,7 +39,7 @@ https://github.com/itemgiver/MovieLens/blob/main/src/MovieLens10M_RMSE_7677.ipyn
 ## Result
 
 Test RMSE = 0.7677 \
-You can see the results of other papers on the RMSE value in this link. \
+You can see the other results on the RMSE value in this link. \
 https://paperswithcode.com/sota/collaborative-filtering-on-movielens-10m?metric=RMSE
 
 Difference between the actual value and the predicted value Histogram \
