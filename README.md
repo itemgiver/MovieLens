@@ -16,10 +16,10 @@ You can learn basic concepts of the recommendation system using "Recommender-Sys
 
 ## Preprocessing
 
-Added a "timestamp" value of when does the user watched the movie since the movie was released. \
-Genre forms such as "Romance, Adventure" was changed to numerical values. \
-The "timestamp" value was grouped at intervals by two weeks and defined as "day" value. \
-The train and test datasets are separated at a ratio of 9:1.
+1. Added a "timestamp" value of when does the user watched the movie since the movie was released.
+2. Genre forms such as "Romance, Adventure" was changed to numerical values.
+3. The "timestamp" value was grouped at intervals by two weeks and defined as "day" value.
+4. The train and test datasets are separated at a ratio of 9:1.
 
 ![image](https://user-images.githubusercontent.com/87184009/135739589-75deb6de-054a-4060-9f47-5b2537b5631c.png)
 
@@ -38,15 +38,12 @@ https://github.com/itemgiver/MovieLens/blob/main/src/MovieLens10M_RMSE_7677.ipyn
 
 ## Result
 
-Test RMSE = 0.7677
-
-Difference between the actual value and the predicted value Histogram\
-![image](https://user-images.githubusercontent.com/87184009/135738882-dd9aa3f7-549a-4858-bd20-ba4c83c17d36.png)
-
-## Benchmark
-
-The results of other papers on the RMSE value can be seen here. \
+Test RMSE = 0.7677 \
+You can see the results of other papers on the RMSE value in this link. \
 https://paperswithcode.com/sota/collaborative-filtering-on-movielens-10m?metric=RMSE
+
+Difference between the actual value and the predicted value Histogram \
+![image](https://user-images.githubusercontent.com/87184009/135738882-dd9aa3f7-549a-4858-bd20-ba4c83c17d36.png)
 
 ## References
 https://grouplens.org/datasets/movielens/
