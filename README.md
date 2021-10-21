@@ -43,7 +43,7 @@ You can see the other results on the RMSE value in this link. \
 https://paperswithcode.com/sota/collaborative-filtering-on-movielens-10m?metric=RMSE
 
 Difference between the actual value and the predicted value Histogram \
-![image](https://user-images.githubusercontent.com/87184009/135738882-dd9aa3f7-549a-4858-bd20-ba4c83c17d36.png)
+![image](https://user-images.githubusercontent.com/87184009/138274092-3b1d1d1a-31e1-4de9-b261-0606b7d71291.png)
 
 ## References
 https://grouplens.org/datasets/movielens/
