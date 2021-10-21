@@ -34,11 +34,11 @@ You can learn basic concepts of the recommendation system using "Recommender-Sys
 7. It is better to put metadata of items such as genres in the MLP input layer without putting them in matrix factorization.
 
 To see more details about my model refer to \
-https://github.com/itemgiver/MovieLens/blob/main/src/MovieLens10M_RMSE_7677.ipynb
+https://github.com/itemgiver/MovieLens/blob/main/src/MovieLens10M_RMSE_7672.ipynb
 
 ## Result
 
-Test RMSE = 0.7677 \
+Test RMSE = 0.7672 \
 You can see the other results on the RMSE value in this link. \
 https://paperswithcode.com/sota/collaborative-filtering-on-movielens-10m?metric=RMSE
 
